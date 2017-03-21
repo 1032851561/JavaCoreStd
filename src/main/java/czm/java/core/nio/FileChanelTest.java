@@ -1,12 +1,9 @@
 package czm.java.core.nio;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.RandomAccessFile;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
-
-import org.junit.Test;
 
 import czm.java.core.util.Constants;
 
@@ -16,6 +13,7 @@ import czm.java.core.util.Constants;
  * @author chenzhiming
  *
  */
+@SuppressWarnings("resource")
 public class FileChanelTest {
 
 	public static void main(String[] args) throws Exception {
@@ -45,5 +43,4 @@ public class FileChanelTest {
 
 		}
 	}
-
 }

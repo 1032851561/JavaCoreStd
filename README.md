@@ -28,6 +28,11 @@
 
 ### 缓冲Buffer
 
+#### 整体类图
+![](./src/main/resources/images/java相关类图-2.png)
+
+
+
 #### 使用步骤
 
 1. 首先分配缓冲区大小:`ByteBuffer.allocate(1024)`
