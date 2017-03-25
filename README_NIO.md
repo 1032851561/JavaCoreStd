@@ -1,6 +1,19 @@
-# NIO
-> 新IO或非阻塞IO
+## NIO
 
+新IO或非阻塞IO，是一种**同步非阻塞**的I/O模型，也是I/O多路复用的基础，NIO几个异于传统java IO特点：
+1. 从面向流的字节处理到面向缓冲区的数据块处理
+2. 基于Selector实现可I/O多路复用
+3. 基于Channel可双向传输数据
+4. 其它一些高级特性：管道之间数据传输、零拷贝等。
+
+Java NIO 几个核心组件：
+
+- Channels（通道）
+- Buffers（缓冲区）
+- Selector
+
+
+![](./src/main/resources/images/NIO逻辑图.png)
 
 ## 缓冲Buffer
 
@@ -178,3 +191,24 @@ Selector（选择器）是Java NIO中能够检测一到多个NIO通道，并能�
 [czm.java.core.nio.DatagramChannelClientDemo](https://github.com/1032851561/JavaCoreStd/blob/master/src/main/java/czm/java/core/nio/DatagramChannelClientDemo.java)
 
 [czm.java.core.nio.DatagramChannelServerDemo](https://github.com/1032851561/JavaCoreStd/blob/master/src/main/java/czm/java/core/nio/DatagramChannelServerDemo.java)
+
+
+## 其它知识点
+
+1. 通道之间的数据传输
+2. Scatter和Gather
+3. Reactor模式和Proactor模式
+4. 管理、文件锁定、DirectBuffer 
+
+
+##参考
+
+美团点评-NIO浅析：[https://zhuanlan.zhihu.com/p/23488863](https://zhuanlan.zhihu.com/p/23488863)
+
+Java进阶（五）Java I/O模型从BIO到NIO和Reactor模式：[http://www.jasongj.com/java/nio_reactor/](http://www.jasongj.com/java/nio_reactor/)
+
+Java NIO 浅析：[https://www.zybuluo.com/dodola/note/153662](https://www.zybuluo.com/dodola/note/153662)
+
+理解Java NIO：[http://www.open-open.com/lib/view/open1371349692734.html](http://www.open-open.com/lib/view/open1371349692734.html)
+
+java并发编程网：[http://ifeve.com/java-nio-all/](http://ifeve.com/java-nio-all/)
